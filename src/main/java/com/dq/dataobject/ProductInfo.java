@@ -42,5 +42,11 @@ public class ProductInfo {
 	private Date updateTime;
 	
 	public ProductInfo(){}
+
+	@Override
+	public String toString() {
+		return "名称=" + productName + "\n价格=" + productPrice + "\n库存="
+				+ productStock + "\n描述=" + productDescription + "\n品种=" + productType;
+	}
 	
 }
